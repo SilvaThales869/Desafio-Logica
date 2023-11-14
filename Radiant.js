@@ -294,4 +294,4 @@ else{
     console.log("You defeated the Gods forging an aliance with the demon kind and now you two fight together for a world with equal chanses for all the sentient races ")
 }
 console.log("ENDING "+end)// showing the ending
-console.log("The hero has ended the adventure as a " + lvl + " level hero")
+console.log("The hero has ended the adventure as a " + lvl + " level hero")// Show wich endin the user got 
