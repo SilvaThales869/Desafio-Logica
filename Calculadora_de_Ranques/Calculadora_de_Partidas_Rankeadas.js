@@ -44,7 +44,7 @@ for(let cont = 0;cont<=e;cont++){// loop to calculate how many matches the user 
     let outcome= game(winrate)
     victory = victory + outcome
 }
-defeat = e-victory
+defeat = matches-victory
 
 // selecting the rank of the user
 if(victory<=10)

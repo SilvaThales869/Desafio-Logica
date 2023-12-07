@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha de CSS - DIO</title>
+</head>
+<body>
+  <style> 
+    @import url('https://fonts.cdnfonts.com/css/raleway-5');  
+    body{
+           background-color: black;
+       }   
+
+       p{
+           display: block;
+       }
+       div{
+           display: block;
+       }
+       *{
+           font-family: 'Raleway',sans-serif;
+           box-sizing: border-box;
+           margin: 0px;
+       } 
+       header{
+           display: block;
+       }
+           .banner{
+               background-image: linear-gradient( rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), 
+               url(https://micheleambrosio.github.io/dio-trilha-css-desafio-01/assets/images/banner.png);
+               background-size: cover;
+               background-repeat: no-repeat;
+               height: 600px;
+               padding-top: 60px;
+               border-bottom: 1px solid #33A8DB80;
+           
+           }.banner h1 {
+               font-size: 2.5rem;
+               font-weight: 900;
+               color: transparent;
+               text-transform: uppercase;
+               background: -webkit-linear-gradient(#33A8DB, #1472B7);
+               -webkit-background-clip: text;
+          
+           }.banner p {
+               font-size: 1.25rem;
+               margin: 16px 0px 24px;
+           }.banner-content{
+               color: white;
+               width: 600px;
+               margin: auto;
+               text-align: center;
+           }.banner .logo{
+               background-color: rgba(0,0,0,.2);
+               height: 260px;
+               width: 260px;
+               border-radius: 50%;
+               margin: auto;
+               padding: 16px;
+               margin-bottom: 16px;
+           }.banner button {
+               color: #31A8DD;
+               font-size: 1rem;
+               font-weight: bold ;
+               background-color: transparent ;
+               padding:16px 32px;
+               text-transform: uppercase;
+               letter-spacing: 4px;
+               border-image: linear-gradient(#3BA1CD, #1572B7);
+               border-image-slice: 10;
+               transition: all 0.1s;
+           }.banner button:hover{
+               background-image: linear-gradient(#3BA1CD, #1572B7);
+               color: white;
+           }
+       main{
+           display: block;
+           text-align: center;
+           color: white;
+          
+       }
+           section{
+               margin: 100px auto;
+           }
+           #course-content{
+               width: 792px;
+               height: 325px;
+               text-align: center;
+           }
+           #course-content h2 {
+               color: #33A8DB;
+               text-transform: uppercase;
+               font-size: 32px;
+               font-weight: 700;
+               letter-spacing: 4px;
+               margin-bottom: 24px;
+           }
+           .modules-list{
+               margin: 24px 0;
+           }
+           .module{
+               width: 530px;
+               background-color: #252525;
+               border-radius: 100px;
+               border: 1px solid #33A8DB;
+               margin: 0px auto 24px;
+               padding: 16px;
+               box-shadow: inset -5px 6px 8px rgba(0,0,0,.7);
+           }
+           span{
+               color: #33A8DB;
+           }
+           #transform-world{
+               height: 560px;
+               background-image: url(https://micheleambrosio.github.io/dio-trilha-css-desafio-01/assets/images/woman-code.png);
+               background-attachment: fixed;
+               background-size: cover;
+               border-top: 1px solid #33A8DB80;
+               border-bottom: 1px solid #33A8DB80;
+               padding: 200px;
+           }
+           #transform-world p{
+               font-weight: 900;
+               font-size: 2.5rem;
+               text-transform: lowercase;
+               max-width: 250px;
+               text-shadow: 3px 2px #33A8DB;
+               text-align: left;
+           }
+           #professional-challenges{
+               width: 800px;
+           }
+           #professional-challenges h2{
+               font-size: 2rem;
+               color: #33A8DB;
+               font-weight: bold;
+               letter-spacing: 4px;
+               text-transform: uppercase;
+               margin-bottom: 24px;
+           }
+           #professional-challenges img{
+               margin: 32px 0px;
+           }
+       footer{
+           text-align: center;
+           color: white;
+           border-top: 1px solid #33A8DB80;
+           padding: 60px 0px;  
+           background: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+       }    
+       footer a{
+           color: #33A8DB;
+           text-decoration: none;
+           font-weight: bold;
+       }
+  </style>     
+  <header class="banner">
+    <div class="banner-content">
+      <div class="logo">
+        <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
+      </div>
+      <h1>Trilha de CSS da DIO</h1>
+      <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
+      <button>Quero me inscrever</button>
+    </div>
+  </header>
+  <main>
+    <section id="course-content">
+      <h2>O que vou aprender?</h2>
+      <p>
+        Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a 
+        desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
+      </p>
+      <div class="modules-list">
+        <div class="module">
+          <span>Módulo 01:</span> primeiros passos com CSS
+        </div>
+        <div class="module">
+          <span>Módulo 02:</span> trabalhando com layouts no CSS
+        </div>
+        <div class="module">
+          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+        </div>
+      </div>
+    </section>
+    <section id="transform-world">
+      <p>TRANSFORME O MUNDO COM A GENTE</p>
+    </section>
+    <section id="professional-challenges">
+      <h2>Evolua e encare novos desafios profissionais</h2>
+      <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
+      <p>
+        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
+        acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
+        além do conhecimento técnico. 
+        A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
+    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+  </footer>
+</body>
+</html>
